@@ -15,7 +15,7 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-App.listen(process.env.PORT || 80);
+App.listen(process.env.PORT || 8080);
 
 new Vue({
   render: h => h(App),
