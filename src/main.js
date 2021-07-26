@@ -15,9 +15,8 @@ Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
 
-const PORT = process.env.PORT || 80;
-App.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
+App.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, App.settings.env);
 });
 
 new Vue({
